@@ -14,7 +14,7 @@ const Home = async () => {
         className="px-10 pt-[100px]"
         action={async () => {
           "use server";
-
+          console.log("signing out");
           await signOut({ redirectTo: ROUTES.SIGN_IN });
         }}
       >
