@@ -32,7 +32,7 @@ const RightSidebar = () => {
           {hotQuestions.map(({ _id, title }) => {
             return (
               <Link
-                href={`${ROUTES.PROFILES(_id)}`}
+                href={`${ROUTES.PROFILE(_id)}`}
                 key={_id}
                 className="flex cursor-pointer items-center justify-between gap-6"
               >
