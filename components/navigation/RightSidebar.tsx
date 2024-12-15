@@ -30,8 +30,6 @@ const RightSidebar = () => {
 
         <div className="mt-7 flex w-full flex-col gap-[30px]">
           {hotQuestions.map(({ _id, title }) => {
-            const route = ROUTES.PROFILES(_id);
-            console.log("route: ", route);
             return (
               <Link
                 href={`${ROUTES.PROFILES(_id)}`}
