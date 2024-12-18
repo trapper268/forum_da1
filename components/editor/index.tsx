@@ -44,7 +44,6 @@ const Editor = ({ value, fieldChange, editorRef, ...props }: Props) => {
   const { resolvedTheme } = useTheme();
 
   const theme = resolvedTheme === "dark" ? [basicDark] : [];
-  console.log(theme);
 
   return (
     <MDXEditor
@@ -52,7 +51,7 @@ const Editor = ({ value, fieldChange, editorRef, ...props }: Props) => {
       markdown={value}
       ref={editorRef}
       // dark-editor: class đang bị lỗi, sau này fix được thì thêm vô sau
-      className="background-light800_dark200 light-border-2 markdown-editor dark-editor w-full border"
+      className="background-light800_dark200 light-border-2 markdown-editor grid w-full border"
       onChange={fieldChange}
       plugins={[
         headingsPlugin(),
